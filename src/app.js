@@ -27,4 +27,10 @@ window.onload = function() {
   ];
   let randomPalos = palos[Math.floor(Math.random() * palos.length)];
   let randomValue = values[Math.floor(Math.random() * values.length)];
+  let paloArriba = document.querySelector("#palo-arriba");
+  paloArriba.innerHTML = randomPalos;
+  let paloAbajo = document.querySelector("#palo-abajo");
+  paloAbajo.innerHTML = randomPalos;
+  let numeros = document.querySelector("#numeros");
+  numeros.innerHTML = randomValue;
 };
