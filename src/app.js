@@ -23,7 +23,7 @@ window.onload = function() {
     " j ",
     " q ",
     " k ",
-    " a ",
+    " a "
   ];
   let randomPalos = palos[Math.floor(Math.random() * palos.length)];
   let randomValue = values[Math.floor(Math.random() * values.length)];
