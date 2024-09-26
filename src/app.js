@@ -29,8 +29,14 @@ window.onload = function() {
   let randomValue = values[Math.floor(Math.random() * values.length)];
   let paloArriba = document.querySelector("#palo-arriba");
   paloArriba.innerHTML = randomPalos;
+  paloArriba.style.color =
+    randomPalos === "♥" || randomPalos === "♦" ? "red" : "black";
   let paloAbajo = document.querySelector("#palo-abajo");
   paloAbajo.innerHTML = randomPalos;
+  // paloAbajo.style.color = "red";
+  paloAbajo.style.color =
+    randomPalos === "♥" || randomPalos === "♦" ? "red" : "black";
   let numeros = document.querySelector("#numeros");
+  console.log(numeros);
   numeros.innerHTML = randomValue;
 };
